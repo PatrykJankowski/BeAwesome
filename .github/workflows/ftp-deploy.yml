@@ -34,3 +34,6 @@ jobs:
           password: ${{ secrets.FTP_PASS }}
           local-dir: dist/
           server-dir: /public_html/beawesome/wp-content/themes/beawesome/
+          dangerous-clean-slate: true
+          timeout: 120000
+          concurrent-uploads: 2
