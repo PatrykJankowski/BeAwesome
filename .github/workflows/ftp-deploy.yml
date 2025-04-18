@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -21,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run gulp build
+      - name: Run gulp deploy
         run: npm run build
 
       - name: List dist folder contents
@@ -34,4 +33,3 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           local-dir: dist/
-          verbose: true
