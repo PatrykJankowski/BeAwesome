@@ -66,8 +66,8 @@
 <!-- Section 2 -->
 <section class="py-24 text-center bg-[linear-gradient(to_bottom,white_0%,#E1E1E1_50%,white_100%)]">
     <div class="container mx-auto px-6 relative">
-        <img class="hidden 2xl:block absolute top-8 -left-12" src="/wp-content/themes/beawesome/img/man.png">
-        <img class="hidden 2xl:block absolute -top-4 -right-12" src="/wp-content/themes/beawesome/img/girl.png">
+        <img class="hidden 2xl:block absolute top-8 -left-12" src="/wp-content/themes/beawesome/img/man.webp">
+        <img class="hidden 2xl:block absolute -top-4 -right-12" src="/wp-content/themes/beawesome/img/girl.webp">
         <div class="grid grid-cols-12">
             <div class="col-span-12 flex flex-col items-center max-w-3xl mx-auto">
                 <h2 class="text-5xl text-gray-2 font-bold">
@@ -192,7 +192,7 @@
 <section class="my-24">
     <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="relative bg-cover bg-top text-white"
-            style="background-image: url('/wp-content/themes/beawesome/img/bg-1.png')">
+            style="background-image: url('/wp-content/themes/beawesome/img/bg-1.webp')">
             <div class="h-full w-full px-12 py-10 flex flex-col items-center justify-between text-center">
                 <div class="flex flex-col items-center gap-8">
                     <svg class="h-16" xmlns="http://www.w3.org/2000/svg" width="56.641" height="55.807"
@@ -247,7 +247,7 @@
         </div>
 
         <div class="relative bg-cover bg-top text-dark"
-            style="background-image: url('/wp-content/themes/beawesome/img/bg-2.png')">
+            style="background-image: url('/wp-content/themes/beawesome/img/bg-2.webp')">
             <div class="h-full w-full px-12 py-10 flex flex-col items-center justify-between text-center">
                 <div class="flex flex-col items-center gap-8">
                     <svg class="h-16" xmlns="http://www.w3.org/2000/svg" width="67.424" height="64.287">
@@ -307,7 +307,7 @@
         </div>
 
         <div class="relative bg-cover bg-top text-white"
-            style="background-image: url('/wp-content/themes/beawesome/img/bg-3.png')">
+            style="background-image: url('/wp-content/themes/beawesome/img/bg-3.webp')">
             <div class="h-full w-full px-12 py-10 flex flex-col items-center justify-between text-center">
                 <div class="flex flex-col items-center gap-8">
                     <svg class="h-16" xmlns="http://www.w3.org/2000/svg" width="90.645" height="46.74">
