@@ -8,7 +8,6 @@ import postcssImport from 'postcss-import';
 import webp from 'gulp-webp';
 import clean from 'gulp-clean';
 import replace from 'gulp-replace';
-import discardEmpty from 'postcss-discard-empty';
 
 const compileSass = gulpSass(dartSass);
 const uglifyEs = uglify.default;
@@ -59,8 +58,8 @@ gulp.task('json', function () {
 
 gulp.task('images', function () {
   return gulp
-    .src('src/img/*.{png,jpg,jpeg}', { allowEmpty: true })
-    .pipe(webp({ quality: 80 }))
+    .src('src/img/*.{jpg,jpeg,png}', { encoding: false, allowEmpty: true })
+    .pipe(webp())
     .pipe(gulp.dest(`${path}img`));
 });
 

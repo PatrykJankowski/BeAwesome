@@ -16,7 +16,7 @@
     "gulp-sass": "^6.0.0",
     "gulp-uglify-es": "^3.0.0",
     "gulp-watch": "^5.0.1",
-    "gulp-webp": "^5.0.0",
+    "gulp-webp": "5.0.0",
     "postcss-discard-empty": "^7.0.0",
     "postcss-import": "^16.1.0",
     "prettier": "^3.5.3",
@@ -37,5 +37,6 @@
   "bugs": {
     "url": "https://github.com/PatrykJankowski/beawesome/issues"
   },
-  "homepage": "https://github.com/PatrykJankowski/beawesome#readme"
+  "homepage": "https://github.com/PatrykJankowski/beawesome#readme",
+  "type": "module"
 }
