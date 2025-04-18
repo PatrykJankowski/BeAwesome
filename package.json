@@ -25,7 +25,7 @@
   },
   "scripts": {
     "dev": "cross-env NODE_ENV='development' gulp dev",
-    "build": "cross-env NODE_ENV='production' gulp css",
+    "build": "gulp && powershell -ExecutionPolicy Bypass -File ./deploy.ps1",
     "format": "prettier --write 'src/**/*.{js,scss,php,json}'"
   },
   "repository": {
