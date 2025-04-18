@@ -1,0 +1,23 @@
+/*!
+Theme Name: beawesome
+Theme URI: https://github.com/patrykjankowski/beawesome
+Author: Patryk Jankowski – Softcraft
+Author URI: https://softcraft.pl
+Description: Szablon Be Awesome Studio
+Version: 1.0.0
+Text Domain: beawesome
+*/
+
+//styles
+@import 'variables';
+@import 'base';
+@import 'button';
+@import 'navigation';
+@import 'footer';
+@import 'utilities';
+@import 'wordpress';
+
+//tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,42 @@
+/* Spacing */
+$xs: 10px;
+$s: 20px;
+$m: 35px;
+$l: 70px;
+$xl: 120px;
+
+/* Sizes */
+$navigation-height: 100px;
+$navigation-height-mobile: 80px;
+
+/* Colors */
+$dark: #0d1e2e;
+$gray-1: #f6f6f6;
+$gray-2: #545454;
+$white: #fff;
+$gold: #d1aa5f;
+
+$primary: $gold;
+$secondary: $dark;
+$text-color: $dark;
+
+/* Fonts */
+$text-size: calc(18rem / 18);
+
+$h1-size: calc(54rem / 18);
+$h2-size: calc(44rem / 18);
+$h3-size: calc(30rem / 18);
+$h4-size: calc(24rem / 18);
+$h5-size: calc(18rem / 18);
+
+/* Resolutions */
+$resolution-sm: 576px;
+$resolution-md: 768px;
+$resolution-lg: 992px;
+$resolution-xl: 1200px;
+$resolution-xxl: 1556px;
+
+// Mixins
+@mixin font-size($fontSize) {
+  font-size: calc($fontSize / 16) + rem;
+}

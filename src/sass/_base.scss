@@ -1,0 +1,30 @@
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: $text-color;
+  margin: 0;
+
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+main {
+  margin-top: $navigation-height-mobile;
+
+  @media (min-width: $resolution-xl) {
+    margin-top: $navigation-height;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}

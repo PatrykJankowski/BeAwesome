@@ -1,0 +1,44 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  min-width: fit-content;
+  height: 50px;
+  padding: 0 1.25rem;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: $dark;
+  color: $white;
+  transition: all 300ms;
+
+  @media (min-width: $resolution-xl) {
+    padding: 0 1.5rem;
+  }
+
+  svg path {
+    transition: all 300ms;
+  }
+
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    transition: all 300ms;
+
+    svg path {
+      fill: $white;
+      transition: all 300ms;
+    }
+  }
+
+  &--primary {
+    background-color: $primary;
+    color: $dark;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}

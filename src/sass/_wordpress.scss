@@ -1,0 +1,162 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    display: inline-flex;
+    gap: 0.25rem;
+
+    a,
+    span {
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      color: $dark;
+      background: $gray-1;
+
+      &:hover {
+        border: 1px solid $dark;
+      }
+
+      &.current {
+        background: $primary;
+        color: $white;
+
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .next,
+  .prev {
+    font-weight: bold;
+  }
+}
+
+// Single post, page
+
+.single-post .post,
+.page .single-page {
+  p {
+    line-height: 1.75rem;
+  }
+
+  p,
+  ul {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid $secondary;
+  }
+}
+
+.single-post .post {
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+}
+
+// Form
+
+.wpcf7 .wpcf7-form {
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: $gray-1;
+    color: $secondary;
+
+    &::placeholder {
+      color: $secondary;
+      opacity: 0.8;
+    }
+  }
+
+  .wpcf7-acceptance {
+    label {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  input[type='checkbox'] {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  input[type='submit'] {
+    width: 100%;
+    background: $primary;
+    color: $secondary;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  select {
+    padding: 10px;
+  }
+
+  .wpcf7-not-valid-tip {
+    position: relative;
+    top: -1rem;
+    @include font-size(14);
+  }
+
+  .wpcf7-response-output {
+    margin: 1rem 0 0;
+  }
+}
+
+// Newsletter
+
+.noptin-optin-main-wrapper {
+  width: 100%;
+
+  .noptin-optin-form-wrapper .noptin-form-footer {
+    padding: 0px;
+  }
+
+  .noptin-optin-form {
+    height: 134px;
+  }
+
+  .noptin-form-footer .noptin-form-button-block {
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .noptin-form-footer .noptin-form-field {
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+  }
+
+  .noptin-alert {
+    padding: 0.25rem;
+    margin-top: 0;
+  }
+
+  .noptin-optin-form {
+    justify-content: start;
+  }
+}
