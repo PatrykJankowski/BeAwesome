@@ -355,4 +355,79 @@
     </div>
 </section>
 
+
+<?php get_template_part('partials/section-generic') ?>
+
+
+<section class="py-24 text-center">
+    <div class="container mx-auto px-6 relative">
+        <div class="grid grid-cols-1">
+            <h2 class="text-3xl font-bold"><?php the_field('schedule_header'); ?></h2>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-48 bg-[url('/wp-content/themes/beawesome/img/bg-section.webp')] bg-cover">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12">
+            <div class="md:col-span-6">
+                <h2 class="text-3xl xl:text-6xl text-primary font-bold mb-12">
+                    <?php the_field('s5_header'); ?>
+                </h2>
+                <div class="text-white">
+                    <?php the_field('s5_description'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-x-16">
+
+            <?php for ($i = 1; $i <= 4; $i++): ?>
+                <?php
+                $header = get_field("s6_header_$i");
+                $desc = get_field("s6_description_$i");
+                $img_src = get_template_directory_uri() . "/img/i{$i}.webp";
+                ?>
+                <div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="<?php echo esc_url($img_src); ?>" alt="" class="w-42 h-42">
+                        <?php if ($header): ?>
+                            <h3 class="text-3xl font-bold"><?php echo esc_html($header); ?></h3>
+                        <?php endif; ?>
+                    </div>
+                    <?php if ($desc): ?>
+                        <p><?php echo $desc; ?></p>
+                    <?php endif; ?>
+                </div>
+            <?php endfor; ?>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-24">
+    <?php
+    get_template_part('partials/section-pricelist', null, ['pricing_page_id' => 2]);
+    ?>
+</section>
+
+<section class="pt-24 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl lg:text-5xl font-bold mb-4">
+            <?php the_field('map_header'); ?>
+        </h2>
+        <p class="mb-12">
+            <?php the_field('map_description'); ?>
+        </p>
+        <img src="/wp-content/themes/beawesome/img/map.webp" alt="Mapa">
+    </div>
+</section>
+
+
 <?php get_footer(); ?>

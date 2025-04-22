@@ -7,22 +7,19 @@
 
 <?php get_header(); ?>
 
+<?php
+$featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+$content = apply_filters('the_content', get_the_content());
 
-<!-- Sekcja Hero -->
-<section
-    class="relative z-10 flex items-center justify-center h-[390px] bg-cover bg-bottom bg-[url(/wp-content/themes/beawesome/img/bg-small-2.png)]"
-    role="banner">
-    <div class="container mx-auto px-6">
-        <h2 class="max-w-xl text-4xl text-white font-extrabold">
-            Bierzemy odpowiedzialność <span class="font-medium">za nasze działania.</span>
-        </h2>
-    </div>
-</section>
+get_template_part('partials/section-baner', null, [
+    'bg' => $featured_image_url,
+    'content' => $content,
+]);
+?>
 
 
 <!-- Sekcja  -->
-<section
-    class="pt-36 pb-0 xl:pb-16 mb-16 -mt-20 relative bg-cover bg-[url(/wp-content/themes/beawesome/img/bg-1.jpg)]">
+<section class="pt-36 pb-0 xl:pb-16 mb-16 -mt-20 relative bg-cover bg-[url(/wp-content/themes/beawesome/img/bg-1.jpg)]">
     <div class="container mx-auto px-6">
         <div class="grid grid-cols-12">
             <div class="col-span-12 xl:col-span-6 flex justify-center order-2 xl:order-1">
@@ -49,9 +46,9 @@
             <h2 class="font-bold text-4xl mb-6">
                 <?php the_field('business_2_title'); ?>
             </h2>
-            
+
             <?php the_field('business_2_description'); ?>
-           
+
             <h3 class="mt-6 mb-6 font-bold text-4xl">
                 <?php the_field('business_2_title_2'); ?>
             </h3>

@@ -1,7 +1,12 @@
 <?php
-/* Template Name: Podstrona generyczna */
-get_header();
+/**
+ * Template Name: Cennik
+ * Description: Szablon podstrony z cennikiem
+ */
 ?>
+
+<?php get_header(); ?>
+
 
 <?php
 $featured_image_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
@@ -12,7 +17,8 @@ get_template_part('partials/section-baner', null, [
     'content' => $content,
 ]);
 ?>
-
-<?php get_template_part('partials/section-generic') ?>
+<section>
+    <?php get_template_part('partials/section-pricelist'); ?>
+</section>
 
 <?php get_footer(); ?>
