@@ -297,7 +297,7 @@
                     $link_title = $button['title'];
                     $link_target = $button['target'] ? $button['target'] : '_self';
                     ?>
-                    <a href="<?php echo esc_url($link_url); ?>" class="mt-6 button button--primary"
+                    <a href="<?php echo esc_url($link_url); ?>" class="mt-6 button"
                         target="<?php echo esc_attr($link_target); ?>">
                         <?php echo esc_html($link_title); ?>
                     </a>
