@@ -70,13 +70,16 @@
 // Form
 
 .wpcf7 .wpcf7-form {
+  padding: 32px;
+  border: 1px solid $gray-3;
+
   input,
   textarea {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0.5rem 2rem;
-    background-color: $gray-1;
     color: $secondary;
+    border: 1px solid $gray-3;
 
     &::placeholder {
       color: $secondary;
@@ -98,27 +101,33 @@
   }
 
   input[type='submit'] {
-    width: 100%;
-    background: $primary;
-    color: $secondary;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
+    @extend .button;
+    width: fit-content;
     cursor: pointer;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   select {
     padding: 10px;
   }
 
+  .wpcf7-form-control-wrap {
+    display: block;
+  }
+
   .wpcf7-not-valid-tip {
-    position: relative;
-    top: -1rem;
-    @include font-size(14);
+    position: absolute;
+    bottom: -16px;
+    font-size: 0.75rem;
+    width: 221px;
+    @include font-size(12);
   }
 
   .wpcf7-response-output {
+    @include font-size(14);
     margin: 1rem 0 0;
+    border-color: $primary;
   }
 }
 

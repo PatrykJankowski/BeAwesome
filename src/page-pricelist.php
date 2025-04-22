@@ -17,7 +17,7 @@ get_template_part('partials/section-baner', null, [
     'content' => $content,
 ]);
 ?>
-<section>
+<section class="mt-24">
     <?php get_template_part('partials/section-pricelist'); ?>
 </section>
 

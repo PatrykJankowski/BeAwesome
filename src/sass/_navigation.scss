@@ -195,7 +195,9 @@
   }
 
   &__nav-desktop-2 {
+    display: none;
     margin: 0 auto;
+
     > ul {
       display: flex;
       gap: 50px;
@@ -291,7 +293,8 @@
     display: none;
   }
 
-  .navbar__nav-desktop {
+  .navbar__nav-desktop,
+  .navbar__nav-desktop-2 {
     display: flex;
   }
 }

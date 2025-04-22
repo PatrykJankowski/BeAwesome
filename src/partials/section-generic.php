@@ -8,14 +8,8 @@
             $is_even = $i % 2 === 0;
             ?>
 
-            <!-- Optional Extra Section Between 1 and 2 -->
-            <?php if ($i === 2 && get_field('rows_extra_section')): ?>
-                <div class="w-full">
-                    <?php echo get_field('rows_extra_section'); ?>
-                </div>
-            <?php endif; ?>
-
             <?php if ($header && $desc && $image): ?>
+                <!-- RENDER MAIN ROW -->
                 <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-8">
                     <?php if ($is_even): ?>
                         <div class="md:col-span-7 order-2 md:order-1">
@@ -99,6 +93,17 @@
                 </div>
 
             <?php endif; ?>
+
+            <?php
+            if ($i < 4) {
+                $extra_section = get_field("rows_extra_section_{$i}");
+                if ($extra_section): ?>
+                    <div class="w-full">
+                        <?php echo $extra_section; ?>
+                    </div>
+                <?php endif;
+            }
+            ?>
         <?php endfor; ?>
     </div>
 </section>

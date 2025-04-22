@@ -395,7 +395,7 @@
                 $img_src = get_template_directory_uri() . "/img/i{$i}.webp";
                 ?>
                 <div>
-                    <div class="flex items-center gap-4 mb-4">
+                    <div class="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
                         <img src="<?php echo esc_url($img_src); ?>" alt="" class="w-42 h-42">
                         <?php if ($header): ?>
                             <h3 class="text-3xl font-bold"><?php echo esc_html($header); ?></h3>
@@ -411,11 +411,13 @@
     </div>
 </section>
 
+
 <section class="py-24">
     <?php
     get_template_part('partials/section-pricelist', null, ['pricing_page_id' => 2]);
     ?>
 </section>
+
 
 <section class="pt-24 bg-white">
     <div class="container mx-auto px-6 text-center">
@@ -425,7 +427,8 @@
         <p class="mb-12">
             <?php the_field('map_description'); ?>
         </p>
-        <img src="/wp-content/themes/beawesome/img/map.webp" alt="Mapa">
+        <a href="https://maps.app.goo.gl/ekcrmRNAoaaVz1WY9" target="_blank"><img
+                src="/wp-content/themes/beawesome/img/map.webp" alt="Mapa"></a>
     </div>
 </section>
 
