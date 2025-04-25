@@ -132,16 +132,26 @@
 }
 
 // Newsletter
-
-.noptin-optin-main-wrapper {
+body .noptin-optin-main-wrapper {
   width: 100%;
 
-  .noptin-optin-form-wrapper .noptin-form-footer {
-    padding: 0px;
+  .noptin-optin-form-wrapper {
+    margin-top: 0;
+
+    .noptin-form-footer {
+      padding: 0px;
+    }
   }
 
   .noptin-optin-form {
     height: 134px;
+    text-align: center;
+  }
+
+  .noptin-form-header {
+    padding: 0 0 20px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .noptin-form-footer .noptin-form-button-block {

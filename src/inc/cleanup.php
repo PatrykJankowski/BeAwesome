@@ -40,6 +40,7 @@ add_action(
     }
 );
 
+
 /*
  * COMMENTS
  * Disable comments globally

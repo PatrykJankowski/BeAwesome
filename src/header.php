@@ -105,6 +105,29 @@
                 <div id="navbar__nav-mobile" class="navbar__nav-mobile">
                     <?php wp_nav_menu(array('theme_location' => 'nav-menu-mobile', 'container' => false)); ?>
                 </div>
+                <?php
+                $button = get_field('cta', 22);
+                if ($button):
+                    $link_url = $button['url'];
+                    $link_title = $button['title'];
+                    $link_target = $button['target'] ? $button['target'] : '_self';
+                    ?>
+                    <a href="<?php echo esc_url($link_url); ?>" class="button inline-flex items-center gap-2"
+                        target="<?php echo esc_attr($link_target); ?>">
+                        <?php echo esc_html($link_title); ?>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.874" height="24.592">
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#d1aa5f" d="M0 0h20.874v24.592H0z" />
+                                </clipPath>
+                            </defs>
+                            <g>
+                                <path fill="#d1aa5f" fill-rule="evenodd"
+                                    d="m14.572 10.8-4.477 7.755a2.3 2.3 0 0 0-.3 1.015l-.155 2.574a2.306 2.306 0 0 0 3.573 2.063l2.152-1.421a2.3 2.3 0 0 0 .727-.772l4.477-7.755a2.306 2.306 0 0 0-.844-3.151l-2-1.153a2.306 2.306 0 0 0-3.151.844m3.882-3.9V3.46A3.46 3.46 0 0 0 14.994 0H3.46A3.461 3.461 0 0 0 0 3.46v16.147a3.46 3.46 0 0 0 3.46 3.46h3.391a1.153 1.153 0 1 0 0-2.307H3.46a1.154 1.154 0 0 1-1.153-1.153V3.46A1.154 1.154 0 0 1 3.46 2.307h11.534a1.154 1.154 0 0 1 1.153 1.153V6.9a1.153 1.153 0 1 0 2.307 0m-1.884 5.056 2 1.153-4.48 7.756-2.152 1.421.155-2.574ZM5.767 17.3h2.509a1.153 1.153 0 0 0 0-2.307H5.767a1.153 1.153 0 0 0 0 2.307m0-4.614h5.017a1.153 1.153 0 1 0 0-2.307H5.767a1.153 1.153 0 1 0 0 2.307m0-4.614h6.92a1.153 1.153 0 0 0 0-2.307h-6.92a1.153 1.153 0 0 0 0 2.307" />
+                            </g>
+                        </svg>
+                    </a>
+                <?php endif; ?>
             </nav>
 
             <div id="navbar__toggle" class="navbar__toggle" onclick="slideToggle()"><i class="navbar__toggle-icon"></i>

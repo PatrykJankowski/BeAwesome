@@ -128,42 +128,38 @@
         <div class="space-y-4">
           <div class="flex items-center gap-2">
             <div class="w-36">Poniedziałek:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_monday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Wtorek:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_tuesday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Środa:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_wednesday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Czwartek:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_thursday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Piątek:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_friday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Sobota:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_saturday', $page_id); ?></div>
           </div>
           <div class="flex items-center gap-2">
             <div class="w-36">Niedziela:</div>
-            <div>8:00-21:00</div>
+            <div><?php the_field('hours_sunday', $page_id); ?></div>
           </div>
         </div>
       </div>
 
 
       <div class="col-span-12 md:col-span-4">
-        <h3 class="text-lg font-bold uppercase text-white">Newsletter</h3>
-
-        <a href="/kontakt" class="button mt-6">
-          Przejdź do kontaktu
-        </a>
+        <?php echo do_shortcode('[noptin form=322]'); ?>
       </div>
 
     </div>

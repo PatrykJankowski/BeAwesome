@@ -427,8 +427,11 @@
         <p class="mb-12">
             <?php the_field('map_description'); ?>
         </p>
-        <a href="https://maps.app.goo.gl/ekcrmRNAoaaVz1WY9" target="_blank"><img
-                src="/wp-content/themes/beawesome/img/map.webp" alt="Mapa"></a>
+        <iframe title="Mapa" src="<?php the_field('map', 14) ?>" width="100%" height="600"
+            style="border:0; filter: grayscale(.9);" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <a href="https://maps.app.goo.gl/ekcrmRNAoaaVz1WY9" target="_blank"><img
+                src="/wp-content/themes/beawesome/img/map.webp" alt="Mapa"></a> -->
     </div>
 </section>
 

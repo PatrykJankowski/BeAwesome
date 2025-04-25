@@ -26,9 +26,19 @@ $pricing_page_id = $args['pricing_page_id'] ?? get_the_ID();
                 <p class="text-sm mb-6">
                     <?php the_field('pricelist_package_1_price_description', $pricing_page_id); ?>
                 </p>
-                <a href="#" class="button button--primary mb-6">
-                    ROZPOCZNIJ
-                </a>
+                <?php
+                $button = get_field('pricelist_package_1_button', $pricing_page_id);
+                if ($button):
+                    $link_url = $button['url'];
+                    $link_title = $button['title'];
+                    $link_target = $button['target'] ? $button['target'] : '_self';
+                    ?>
+                    <a href="<?php echo esc_url($link_url); ?>" class="button button--primary mb-6"
+                        target="<?php echo esc_attr($link_target); ?>">
+                        <?php echo esc_html($link_title); ?>
+                    </a>
+                <?php endif; ?>
+                <?php $button = null; ?>
                 <p class="text-primary mb-6 text-sm">
                     <?php the_field('pricelist_package_1_button_description', $pricing_page_id); ?>
                 </p>
@@ -55,9 +65,19 @@ $pricing_page_id = $args['pricing_page_id'] ?? get_the_ID();
                 <p class="text-sm mb-6">
                     <?php the_field('pricelist_package_2_price_description', $pricing_page_id); ?>
                 </p>
-                <a href="#" class="button button--primary mb-6">
-                    ROZPOCZNIJ
-                </a>
+                <?php
+                $button = get_field('pricelist_package_2_button', $pricing_page_id);
+                if ($button):
+                    $link_url = $button['url'];
+                    $link_title = $button['title'];
+                    $link_target = $button['target'] ? $button['target'] : '_self';
+                    ?>
+                    <a href="<?php echo esc_url($link_url); ?>" class="button button--primary mb-6"
+                        target="<?php echo esc_attr($link_target); ?>">
+                        <?php echo esc_html($link_title); ?>
+                    </a>
+                <?php endif; ?>
+                <?php $button = null; ?>
                 <p class="text-primary mb-6 text-sm">
                     <?php the_field('pricelist_package_2_button_description', $pricing_page_id); ?>
                 </p>
@@ -82,9 +102,19 @@ $pricing_page_id = $args['pricing_page_id'] ?? get_the_ID();
                 <p class="text-sm text-white mb-6">
                     <?php the_field('pricelist_package_3_price_description', $pricing_page_id); ?>
                 </p>
-                <a href="#" class="button mb-6">
-                    ROZPOCZNIJ
-                </a>
+                <?php
+                $button = get_field('pricelist_package_3_button', $pricing_page_id);
+                if ($button):
+                    $link_url = $button['url'];
+                    $link_title = $button['title'];
+                    $link_target = $button['target'] ? $button['target'] : '_self';
+                    ?>
+                    <a href="<?php echo esc_url($link_url); ?>" class="button mb-6"
+                        target="<?php echo esc_attr($link_target); ?>">
+                        <?php echo esc_html($link_title); ?>
+                    </a>
+                <?php endif; ?>
+                <?php $button = null; ?>
                 <p class="mb-6 text-sm">
                     <?php the_field('pricelist_package_3_button_description', $pricing_page_id); ?>
                 </p>

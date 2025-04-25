@@ -30,7 +30,7 @@
                                 <p><?php echo $desc; ?></p>
                             </div>
                         </div>
-                        <div class="md:col-span-5 flex flex-col items-center relative p-2 md:p-6 order-1 md:order-2">
+                        <div class="md:col-span-5 flex flex-col items-center relative p-2 md:p-5 order-1 md:order-2">
                             <svg class="absolute top-0 w-full max-w-[524px] h-auto" xmlns="http://www.w3.org/2000/svg"
                                 width="523.894" height="184.119" viewBox="0 0 523.894 184.119">
                                 <path id="Path_43407" data-name="Path 43407"
@@ -51,7 +51,7 @@
                             </svg>
                         </div>
                     <?php else: ?>
-                        <div class="md:col-span-5 flex flex-col items-center relative p-2 md:p-6">
+                        <div class="md:col-span-5 flex flex-col items-center relative p-2 md:p-5">
                             <svg class="absolute top-0 w-full max-w-[524px] h-auto" xmlns="http://www.w3.org/2000/svg"
                                 width="523.894" height="184.119" viewBox="0 0 523.894 184.119">
                                 <path id="Path_43407" data-name="Path 43407"

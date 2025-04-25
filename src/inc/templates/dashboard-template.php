@@ -16,7 +16,7 @@
 
         <a href="<?php echo admin_url('post.php?post=14&action=edit'); ?>" class="button"
             style="padding: 8px 20px; background-color: #59524c; color: #fff; border: none; border-radius: 4px; font-size: 15px; text-decoration: none;">
-            📩 Dane kontaktowe
+            📩 Dane kontaktowe i godziny otwarcia
         </a>
 
         <a href="https://app.fitssey.com" target="_blank" class="button"
