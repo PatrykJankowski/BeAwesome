@@ -362,7 +362,7 @@
 <section class="py-24 text-center">
     <div class="container mx-auto px-6 relative">
         <div class="grid grid-cols-1">
-            <h2 class="text-3xl font-bold"><?php the_field('schedule_header'); ?></h2>
+            <div class="text-3xl font-bold"><?php echo get_field('schedule_header'); ?></div>
         </div>
     </div>
 </section>
