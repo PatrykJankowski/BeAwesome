@@ -23,6 +23,8 @@
     <!-- Treść na obrazku -->
     <div class="container relative z-10 px-6 text-white">
         <div class="grid grid-cols-12">
+            <img src="/wp-content/themes/beawesome/img/dots.svg"
+                class="hidden xl:block absolute -top-[160px] left-[24px]">
             <div class="col-span-12 md:col-span-6">
                 <span class="tracking-widest text-md mb-6 block"><?php the_field('banner_upper_header'); ?></span>
                 <h2 class="font-extrabold text-4xl md:text-5xl text-primary drop-shadow">
@@ -57,6 +59,8 @@
                     </a>
                 <?php endif; ?>
             </div>
+            <img src="/wp-content/themes/beawesome/img/dots.svg"
+                class="hidden xl:block absolute -bottom-[160px] left-[300px]">
         </div>
     </div>
 </section>

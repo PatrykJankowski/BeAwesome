@@ -112,7 +112,7 @@
                     $link_title = $button['title'];
                     $link_target = $button['target'] ? $button['target'] : '_self';
                     ?>
-                    <a href="<?php echo esc_url($link_url); ?>" class="button inline-flex items-center gap-2"
+                    <a href="<?php echo esc_url($link_url); ?>" class="button hidden xl:inline-flex items-center gap-2 ml-4"
                         target="<?php echo esc_attr($link_target); ?>">
                         <?php echo esc_html($link_title); ?>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20.874" height="24.592">

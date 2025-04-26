@@ -9,9 +9,10 @@
             ?>
 
             <?php if ($header && $desc && $image): ?>
-                <!-- RENDER MAIN ROW -->
                 <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-8">
                     <?php if ($is_even): ?>
+                        <img src="/wp-content/themes/beawesome/img/lines.svg"
+                            class="absolute hidden 2xl:block w-[176px] -left-[50px]">
                         <div class="md:col-span-7 order-2 md:order-1">
                             <div class="xl:mr-24 relative">
                                 <svg class="relative top-3 left-[-29px]" xmlns="http://www.w3.org/2000/svg" width="139.999"
@@ -51,6 +52,7 @@
                             </svg>
                         </div>
                     <?php else: ?>
+                        <img src="/wp-content/themes/beawesome/img/lines.svg" class="absolute hidden 2xl:block w-[176px] right-0">
                         <div class="md:col-span-5 flex flex-col items-center relative p-2 md:p-5">
                             <svg class="absolute top-0 w-full max-w-[524px] h-auto" xmlns="http://www.w3.org/2000/svg"
                                 width="523.894" height="184.119" viewBox="0 0 523.894 184.119">
