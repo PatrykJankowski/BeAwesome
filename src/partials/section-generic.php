@@ -1,4 +1,4 @@
-<section class="py-24">
+<section class="py-24" data-aos="fade-up">
     <div class="container mx-auto px-6 flex flex-col gap-12">
         <?php for ($i = 1; $i <= 4; $i++): ?>
             <?php

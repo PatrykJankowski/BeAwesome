@@ -68,7 +68,7 @@
 
 
 <!-- Section 2 -->
-<section class="py-24 text-center bg-[linear-gradient(to_bottom,white_0%,#E1E1E1_50%,white_100%)]">
+<section class="py-24 text-center bg-[linear-gradient(to_bottom,white_0%,#E1E1E1_50%,white_100%)]" data-aos="fade-up">
     <div class="container mx-auto px-6 relative">
         <img class="hidden 2xl:block absolute top-8 -left-12" src="/wp-content/themes/beawesome/img/man.webp">
         <img class="hidden 2xl:block absolute -top-4 -right-12" src="/wp-content/themes/beawesome/img/girl.webp">
@@ -193,7 +193,7 @@
 <!-- Section end -->
 
 
-<section class="my-24">
+<section class="my-24" data-aos="fade-up">
     <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="relative bg-cover bg-top text-white"
             style="background-image: url('/wp-content/themes/beawesome/img/bg-1.webp')">

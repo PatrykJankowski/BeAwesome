@@ -119,9 +119,7 @@
               </a>
             </div>
           <?php endif; ?>
-
         </div>
-
       </div>
 
       <div class="col-span-12 md:col-span-4">
@@ -157,11 +155,65 @@
         </div>
       </div>
 
-
-      <div class="col-span-12 md:col-span-4">
+      <div class="col-span-12 md:col-span-4 pt-6 md:pt-0">
         <?php echo do_shortcode('[noptin form=322]'); ?>
-      </div>
 
+        <?php
+        $facebook = get_field('facebook', $page_id);
+        $x = get_field('x', $page_id);
+        $instagram = get_field('instagram', $page_id);
+        ?>
+
+        <div class="flex gap-2">
+          <?php if ($facebook): ?>
+            <a class="flex items-center justify-center border border-white w-12 h-12"
+              href="<?php echo esc_url($facebook); ?>" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8.924" height="16.505">
+                <path fill="#d1aa5f"
+                  d="M8.588 0h-2.14a3.759 3.759 0 0 0-3.959 4.062v1.873H.337A.337.337 0 0 0 0 6.272v2.713a.337.337 0 0 0 .337.337h2.152v6.847a.336.336 0 0 0 .337.337h2.807a.337.337 0 0 0 .337-.337V9.322h2.516a.336.336 0 0 0 .337-.337V6.272a.337.337 0 0 0-.337-.337H5.97V4.347c0-.763.182-1.15 1.176-1.15h1.442a.337.337 0 0 0 .335-.337V.34A.337.337 0 0 0 8.588 0Z"
+                  data-name="Path 105" />
+              </svg>
+            </a>
+          <?php endif; ?>
+
+          <?php if ($x): ?>
+            <a class="flex items-center justify-center border border-white w-12 h-12" href="<?php echo esc_url($x); ?>"
+              target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16.505" height="13.513">
+                <path fill="#d1aa5f"
+                  d="M16.131 1.56a6.257 6.257 0 0 1-.8.291 3.529 3.529 0 0 0 .718-1.263.266.266 0 0 0-.389-.31 6.282 6.282 0 0 1-1.857.734 3.545 3.545 0 0 0-6.021 2.531 3.614 3.614 0 0 0 .029.458 9.071 9.071 0 0 1-6.226-3.3.266.266 0 0 0-.436.034 3.548 3.548 0 0 0 .363 4.078 3 3 0 0 1-.474-.212.266.266 0 0 0-.4.227v.047a3.556 3.556 0 0 0 1.734 3.047 3.135 3.135 0 0 1-.27-.039.266.266 0 0 0-.3.343 3.542 3.542 0 0 0 2.6 2.377 6.268 6.268 0 0 1-3.351.956 6.41 6.41 0 0 1-.75-.044.266.266 0 0 0-.179.488 9.555 9.555 0 0 0 5.167 1.51 9.192 9.192 0 0 0 7.122-3.128 9.915 9.915 0 0 0 2.468-6.462V3.63a6.888 6.888 0 0 0 1.585-1.679.266.266 0 0 0-.329-.391Z" />
+              </svg>
+            </a>
+          <?php endif; ?>
+
+          <?php if ($instagram): ?>
+            <a class="flex items-center justify-center border border-white w-12 h-12"
+              href="<?php echo esc_url($instagram); ?>" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16.505" height="16.505">
+                <g data-name="Group 29">
+                  <g data-name="Group 28">
+                    <path fill="#d1aa5f"
+                      d="M11.347 0H5.158A5.158 5.158 0 0 0 0 5.158v6.19a5.158 5.158 0 0 0 5.158 5.158h6.19a5.158 5.158 0 0 0 5.158-5.158v-6.19A5.158 5.158 0 0 0 11.347 0Zm3.611 11.347a3.615 3.615 0 0 1-3.611 3.611H5.158a3.615 3.615 0 0 1-3.611-3.611V5.158a3.615 3.615 0 0 1 3.611-3.611h6.19a3.615 3.615 0 0 1 3.611 3.611Z"
+                      data-name="Path 98" />
+                  </g>
+                </g>
+                <g data-name="Group 31">
+                  <g data-name="Group 30">
+                    <path fill="#d1aa5f"
+                      d="M8.252 4.126a4.126 4.126 0 1 0 4.126 4.126 4.127 4.127 0 0 0-4.126-4.126Zm0 6.705a2.579 2.579 0 1 1 2.579-2.579 2.583 2.583 0 0 1-2.579 2.579Z"
+                      data-name="Path 99" />
+                  </g>
+                </g>
+                <g data-name="Group 33">
+                  <g data-name="Group 32" transform="translate(12.139 3.267)">
+                    <circle cx=".55" cy=".55" r=".55" fill="#d1aa5f" data-name="Ellipse 11" />
+                  </g>
+                </g>
+              </svg>
+            </a>
+          <?php endif; ?>
+        </div>
+      </div>
     </div>
 
     <div class="text-sm mt-8">
