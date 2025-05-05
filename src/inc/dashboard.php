@@ -75,7 +75,7 @@ add_action('admin_menu', function () {
     add_menu_page(
         'Be Awesome Panel',
         'Kokpit',
-        'manage_options',
+        'edit_pages',
         'dashboard',
         'render_custom_dashboard_page',
         'dashicons-chart-area',
